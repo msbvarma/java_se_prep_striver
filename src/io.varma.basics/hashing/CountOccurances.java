@@ -38,4 +38,26 @@ public class CountOccurances {
 		
 	}
 
+    //Find the highest/lowest frequency element
+		int minKey = 0,maxKey =0;
+		
+		for(Map.Entry<Integer,Integer> entry: countMap.entrySet()) {
+			//Initially set first value
+			if(minKey==0 && maxKey==0) {
+				minKey = entry.getValue();
+				maxKey = entry.getValue();
+			} else {
+				if(entry.getValue() > maxKey) {
+					maxKey = entry.getKey();
+				}
+				if(entry.getValue()<minKey) {
+					minKey = entry.getKey();
+				}
+			}
+			
+		}
+		System.out.println("Max and Min"+maxKey+"--"+minKey);
+		
+	}
+
 }
