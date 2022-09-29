@@ -1,4 +1,4 @@
-package com.app.varma.basics;
+package com.app.varma.basics.recursion;
 
 public class Recursion {
  static int counter =0;
